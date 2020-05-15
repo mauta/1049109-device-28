@@ -17,7 +17,7 @@
     </div>
     <nav class="header__nav">
       <ul class="header__menu">
-        <li class="header__item">каталог товаров</li>
+        <li class="header__item">каталог товаров
         <ul class="header__submenu">
           <li class="header__sub-item">Виртуальная реальность</li>
           <li class="header__sub-item">Моноподы для селфи</li>
@@ -30,6 +30,7 @@
         <ul class="header__submenu">
           <li class="header__sub-item">Квадрокоптер</li>
         </ul>
+      </li>
         <li class="header__item">доставка</li>
         <li class="header__item">гарантия</li>
         <li class="header__item">контакты</li>
@@ -54,65 +55,65 @@
 
 
 
-      <div class="catalog__filter filter">
+      <form class="catalog__filter filter">
         <!-- здeсь могла быть ваша реклама и ползунок -->
 
         <fieldset class="color">
-          <div class="color__wrap">
+          <!-- <div class="color__wrap"> -->
             <legend class="color__legend">Цвет</legend>
 
-            <label class="color__label" for="filter-color">
-              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color" checked>
+            <label class="color__label" >
+              <input class="color__input" type="checkbox" name="color" value="color" checked>
               <span class="color__checkbox"></span>
               Чёрный
             </label>
 
-            <label class="color__label" for="filter-color">
-              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color">
+            <label class="color__label" >
+              <input class="color__input" type="checkbox" name="color" value="color" >
               <span class="color__checkbox"></span>
               Белый
             </label>
 
-            <label class="color__label" for="filter-color">
-              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color" checked>
+            <label class="color__label" >
+              <input class="color__input" type="checkbox" name="color" value="color" checked>
               <span class="color__checkbox"></span>
               Синий
             </label>
 
-            <label class="color__label" for="filter-color">
-              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color" checked>
+            <label class="color__label" >
+              <input class="color__input" type="checkbox" name="color" value="color"  checked>
               <span class="color__checkbox"></span>
               Красный
             </label>
 
-            <label class="color__label" for="filter-color">
-              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color">
+            <label class="color__label" >
+              <input class="color__input" type="checkbox" name="color" value="color" >
               <span class="color__checkbox"></span>
               Розовый
             </label>
 
-          </div>
+          <!-- </div> -->
         </fieldset>
 
         <fieldset class="bluetooth">
-          <div class="bluetooth__wrap">
+          <!-- <div class="bluetooth__wrap"> -->
             <legend class="bluetooth__legend">bluetooth</legend>
-            <label class="bluetooth__label" for="filter-bluetooth">
-              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth" id="filter-bluetooth"
+            <label class="bluetooth__label" >
+              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth"
                 checked>
               <span class="bluetooth__radio"></span>
               есть
             </label>
-            <label class="bluetooth__label" for="filter-bluetooth">
-              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth" id="filter-bluetooth">
+            <label class="bluetooth__label" >
+              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth" >
               <span class="bluetooth__radio"></span>
               нет
             </label>
-          </div>
+          <!-- </div> -->
         </fieldset>
 
         <button class="filter__btn" type="submit">показать</button>
-      </div>
+      </form>
 
       <div class="catalog__wrap">
         <ul class="catalog__list">
