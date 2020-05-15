@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo" src="" alt="Логотип, слово 'device' ">
+    <div class="header__activity">
+      <div>Поиск по сайту</div>
+      <div>войти</div>
+      <div>сравнить</div>
+      <div>корзина</div>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item">каталог товаров</li>
+        <ul class="header__submenu">
+          <li class="header__sub-item">Виртуальная реальность</li>
+          <li class="header__sub-item">Моноподы для селфи</li>
+          <li class="header__sub-item">Экшн-камеры</li>
+        </ul>
+        <ul class="header__submenu">
+          <li class="header__sub-item">Фитнес-браслеты</li>
+          <li class="header__sub-item">Умные часы</li>
+        </ul>
+        <ul class="header__submenu">
+          <li class="header__sub-item">Квадрокоптер</li>
+        </ul>
+        <li class="header__item">доставка</li>
+        <li class="header__item">гарантия</li>
+        <li class="header__item">контакты</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visualy-hidden">Каталог магазина гаджетов 'Device'</h1>
+    <section class="catalog">
+      <h2 class="catalog__title">Моноподы для селфи</h2>
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="" class="breadcrumbs__link">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Моноподы для селфи</a>
+        </li>
+      </ul>
+
+
+
+      <div class="catalog__filter filter">
+        <!-- здeсь могла быть ваша реклама и ползунок -->
+
+        <fieldset class="color">
+          <div class="color__wrap">
+            <legend class="color__legend">Цвет</legend>
+
+            <label class="color__label" for="filter-color">
+              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color" checked>
+              <span class="color__checkbox"></span>
+              Чёрный
+            </label>
+
+            <label class="color__label" for="filter-color">
+              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color">
+              <span class="color__checkbox"></span>
+              Белый
+            </label>
+
+            <label class="color__label" for="filter-color">
+              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color" checked>
+              <span class="color__checkbox"></span>
+              Синий
+            </label>
+
+            <label class="color__label" for="filter-color">
+              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color" checked>
+              <span class="color__checkbox"></span>
+              Красный
+            </label>
+
+            <label class="color__label" for="filter-color">
+              <input class="color__input" type="checkbox" name="color" value="colorh" id="filter-color">
+              <span class="color__checkbox"></span>
+              Розовый
+            </label>
+
+          </div>
+        </fieldset>
+
+        <fieldset class="bluetooth">
+          <div class="bluetooth__wrap">
+            <legend class="bluetooth__legend">bluetooth</legend>
+            <label class="bluetooth__label" for="filter-bluetooth">
+              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth" id="filter-bluetooth"
+                checked>
+              <span class="bluetooth__radio"></span>
+              есть
+            </label>
+            <label class="bluetooth__label" for="filter-bluetooth">
+              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth" id="filter-bluetooth">
+              <span class="bluetooth__radio"></span>
+              нет
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="filter__btn" type="submit">показать</button>
+      </div>
+
+      <div class="catalog__wrap">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <img class="catalog__img" src="" alt="">
+            <p class="catalog__name">Любительская селфи-палка</p>
+            <span class="catalog__price">500 руб.</span>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="" alt="">
+            <p class="catalog__name">Профессиональная
+              селфи-палка </p>
+            <span class="catalog__price">1 500 руб.</span>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="" alt="">
+            <p class="catalog__name">Непотопляемая селфи-палка</p>
+            <span class="catalog__price">2 500 руб.</span>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="" alt="">
+            <p class="catalog__name">Селфи-палка «Следуй за мной»</p>
+            <span class="catalog__price">4 900 руб.</span>
+          </li>
+        </ul>
+
+        <div class="catalog__pages">
+          <button class="catalog__btn" type="button">назад</button>
+          <a class="catalog__link" href="">1</a>
+          <a class="catalog__link" href="">2</a>
+          <a class="catalog__link" href="">3</a>
+          <button class="catalog__btn" type="button">вперед</button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__left-wrap">
+      <img class="footer__logo" src="" alt="">
+      <p class="footer__address">г. Москва, ул. Строителей, 15
+      </p>
+    </div>
+    <div class="footer__center-wrap">
+      <ul class="footer__nav">
+        <li class="footer__link">доставка</li>
+        <li class="footer__link">гарантия</li>
+        <li class="footer__link">контакты</li>
+      </ul>
+      <ul class="footer__social">
+        <li class="footer__social-link">фейсбук</li>
+        <li class="footer__social-link">инстаграм</li>
+        <li class="footer__social-link">твитер</li>
+      </ul>
+    </div>
+
+    <div class="footer__right-wrap">
+      <div class="footer__activity">
+        <div>войти</div>
+        <div>сравнить</div>
+        <div>корзина</div>
+      </div>
+      <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
+      <a class="footer__copyright" href="">HTML-academy</a>
+    </div>
+  </footer>
+</body>
+
+</html>
