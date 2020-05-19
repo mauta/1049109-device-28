@@ -8,7 +8,7 @@
 
 <body>
   <header class="header">
-    <img class="header__logo" src="" alt="Логотип, слово 'device' ">
+    <a href="index.html"><img class="header__logo" src="" alt="Логотип, слово 'device' "></a>
     <div class="header__activity">
       <div>Поиск по сайту</div>
       <div>войти</div>
@@ -18,19 +18,19 @@
     <nav class="header__nav">
       <ul class="header__menu">
         <li class="header__item">каталог товаров
-        <ul class="header__submenu">
-          <li class="header__sub-item">Виртуальная реальность</li>
-          <li class="header__sub-item">Моноподы для селфи</li>
-          <li class="header__sub-item">Экшн-камеры</li>
-        </ul>
-        <ul class="header__submenu">
-          <li class="header__sub-item">Фитнес-браслеты</li>
-          <li class="header__sub-item">Умные часы</li>
-        </ul>
-        <ul class="header__submenu">
-          <li class="header__sub-item">Квадрокоптер</li>
-        </ul>
-      </li>
+          <ul class="header__submenu">
+            <li class="header__sub-item">Виртуальная реальность</li>
+            <li class="header__sub-item">Моноподы для селфи</li>
+            <li class="header__sub-item">Экшн-камеры</li>
+          </ul>
+          <ul class="header__submenu">
+            <li class="header__sub-item">Фитнес-браслеты</li>
+            <li class="header__sub-item">Умные часы</li>
+          </ul>
+          <ul class="header__submenu">
+            <li class="header__sub-item">Квадрокоптер</li>
+          </ul>
+        </li>
         <li class="header__item">доставка</li>
         <li class="header__item">гарантия</li>
         <li class="header__item">контакты</li>
@@ -41,7 +41,7 @@
     <h1 class="visualy-hidden">Каталог магазина гаджетов 'Device'</h1>
     <section class="catalog">
       <h2 class="catalog__title">Моноподы для селфи</h2>
-      <ul class="breadcrumbs__list">
+      <ul class="breadcrumbs breadcrumbs__list">
         <li class="breadcrumbs__item">
           <a href="" class="breadcrumbs__link">Главная</a>
         </li>
@@ -53,62 +53,71 @@
         </li>
       </ul>
 
+      <div class="catalog__header">
+        <span>фильтр:</span>
+        <span>сортировка:</span>
+        <ul>
+          <li>По цене</li>
+          <li>По типу</li>
+          <li>По популярности</li>
+        </ul>
+        <span>вверх</span>
+        <span>вниз</span>
+      </div>
 
-
-      <form class="catalog__filter filter">
+      <form class="catalog__filter filter" action="https://echo.htmlacademy.ru/">
         <!-- здeсь могла быть ваша реклама и ползунок -->
 
         <fieldset class="color">
           <!-- <div class="color__wrap"> -->
-            <legend class="color__legend">Цвет</legend>
+          <legend class="color__legend">Цвет</legend>
 
-            <label class="color__label" >
-              <input class="color__input" type="checkbox" name="color" value="color" checked>
-              <span class="color__checkbox"></span>
-              Чёрный
-            </label>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color" checked>
+            <span class="color__checkbox"></span>
+            Чёрный
+          </label>
 
-            <label class="color__label" >
-              <input class="color__input" type="checkbox" name="color" value="color" >
-              <span class="color__checkbox"></span>
-              Белый
-            </label>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color">
+            <span class="color__checkbox"></span>
+            Белый
+          </label>
 
-            <label class="color__label" >
-              <input class="color__input" type="checkbox" name="color" value="color" checked>
-              <span class="color__checkbox"></span>
-              Синий
-            </label>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color" checked>
+            <span class="color__checkbox"></span>
+            Синий
+          </label>
 
-            <label class="color__label" >
-              <input class="color__input" type="checkbox" name="color" value="color"  checked>
-              <span class="color__checkbox"></span>
-              Красный
-            </label>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color" checked>
+            <span class="color__checkbox"></span>
+            Красный
+          </label>
 
-            <label class="color__label" >
-              <input class="color__input" type="checkbox" name="color" value="color" >
-              <span class="color__checkbox"></span>
-              Розовый
-            </label>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color">
+            <span class="color__checkbox"></span>
+            Розовый
+          </label>
 
           <!-- </div> -->
         </fieldset>
 
         <fieldset class="bluetooth">
           <!-- <div class="bluetooth__wrap"> -->
-            <legend class="bluetooth__legend">bluetooth</legend>
-            <label class="bluetooth__label" >
-              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth"
-                checked>
-              <span class="bluetooth__radio"></span>
-              есть
-            </label>
-            <label class="bluetooth__label" >
-              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth" >
-              <span class="bluetooth__radio"></span>
-              нет
-            </label>
+          <legend class="bluetooth__legend">bluetooth</legend>
+          <label class="bluetooth__label">
+            <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth" checked>
+            <span class="bluetooth__radio"></span>
+            есть
+          </label>
+          <label class="bluetooth__label">
+            <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth">
+            <span class="bluetooth__radio"></span>
+            нет
+          </label>
           <!-- </div> -->
         </fieldset>
 
@@ -119,24 +128,36 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <img class="catalog__img" src="" alt="">
-            <p class="catalog__name">Любительская селфи-палка</p>
+            <a href="#" class="catalog__name">Любительская селфи-палка</a>
             <span class="catalog__price">500 руб.</span>
+            <span class="catalog__new">новый</span>
+            <button class="catalog__add-cart" type="button">в корзину</button>
+            <button class="catalog__add-compare" type="button">Добавить к сравнению</button>
           </li>
           <li class="catalog__item">
             <img class="catalog__img" src="" alt="">
-            <p class="catalog__name">Профессиональная
-              селфи-палка </p>
+            <a href="#" class="catalog__name">Профессиональная
+              селфи-палка </a>
             <span class="catalog__price">1 500 руб.</span>
+            <span class="catalog__new">новый</span>
+            <button class="catalog__add-cart" type="button">в корзину</button>
+            <button class="catalog__add-compare" type="button">Добавить к сравнению</button>
           </li>
           <li class="catalog__item">
             <img class="catalog__img" src="" alt="">
-            <p class="catalog__name">Непотопляемая селфи-палка</p>
+            <a href="#" class="catalog__name">Непотопляемая селфи-палка</a>
             <span class="catalog__price">2 500 руб.</span>
+            <span class="catalog__new">новый</span>
+            <button class="catalog__add-cart" type="button">в корзину</button>
+            <button class="catalog__add-compare" type="button">Добавить к сравнению</button>
           </li>
           <li class="catalog__item">
             <img class="catalog__img" src="" alt="">
-            <p class="catalog__name">Селфи-палка «Следуй за мной»</p>
+            <a href="#" class="catalog__name">Селфи-палка «Следуй за мной»</a>
             <span class="catalog__price">4 900 руб.</span>
+            <span class="catalog__new">новый</span>
+            <button class="catalog__add-cart" type="button">в корзину</button>
+            <button class="catalog__add-compare" type="button">Добавить к сравнению</button>
           </li>
         </ul>
 
@@ -178,7 +199,7 @@
         <div>корзина</div>
       </div>
       <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
-      <a class="footer__copyright" href="">HTML-academy</a>
+      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML-academy</a>
     </div>
   </footer>
 </body>
