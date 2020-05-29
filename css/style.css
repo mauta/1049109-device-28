@@ -1,0 +1,410 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/gilroylight.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src:
+    url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src:
+    url("../fonts/gilroyextrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src:
+    url("../fonts/gilroyextrabold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url("../fonts/opensanslight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    url("../fonts/opensanslight.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/opensans.ttf") format("ttf");
+}
+
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --accent-bgr: #F7E296;
+  --basic-grey-light: #E5E5E5;
+  --basic-dark: #363636;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  min-width: 1160px;
+  font-style: normal;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.link {
+  text-decoration: none;
+  color: var(--basic-black);
+  font-style: normal;
+}
+
+.header {
+  width: 1160px;
+  margin: 0 auto;
+  background-color: var(--accent-bgr);
+
+}
+
+.header__top-link {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.header__link {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.header__sub-link {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.product {
+  width: 1160px;
+  margin: 0 auto;
+
+}
+
+.product__tagline {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.product__text {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.product__details {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.slayder__btn {
+  border-radius: 50%;
+  outline: none;
+}
+
+.product__value {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+}
+
+.product__key {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.kinds {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.kinds__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.kinds__img-wrap {
+  width: 160px;
+  height: 160px;
+  background-color: var(--accent-bgr);
+  display: flex;
+  align-items: center;
+}
+
+.kinds__img {
+  margin: auto;
+}
+
+.kinds__name {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  width: 160px;
+}
+
+.services {
+  width: 100%;
+  background-color: var(--basic-grey-light);
+}
+
+.services__wrap {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.services__btn {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.services__caption {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.services__text {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+}
+
+.logotypes {
+  width: 1160px;
+  margin: 0 auto;
+
+}
+
+.logotypes__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-contact-wrap{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.about__text {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.about__link {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.about__company {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.contacts__title {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.contacts__text {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.contacts__btn {
+  border: none;
+  background-color: transparent;
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.footer {
+  width: 100%;
+  background-color: var(--basic-dark);
+}
+
+.footer__wrap {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer__address {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white);
+  opacity: 0.7;
+}
+
+.footer__link {
+  font-family: "Gilroy", Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.footer__activity-link{
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white);
+  opacity: 0.7;
+}
+
+.footer__phone{
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-white);
+  opacity: 0.8;
+}
