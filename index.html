@@ -64,7 +64,7 @@
       <h3 class="product__tagline">Делай селфи, как Бен Стиллер! </h3>
       <p class="product__text">Самая длинная палка для селфи доступна в нашем магазине.
         Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-      <a href="" class="product__details link">подробнее</a>
+      <a href="" class="product__details like-btn link">подробнее</a>
 
       <div class="product__slayder slayder">
         <button class="slayder__btn">0</button>
@@ -149,13 +149,13 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services__list list">
           <li class="services__item">
-            <button class="services__btn" type="button"> доставка</button>
+            <button class="services__btn like-btn" type="button"> доставка</button>
           </li>
           <li class="services__item">
-            <button class="services__btn" type="button"> гарантия</button>
+            <button class="services__btn like-btn" type="button"> гарантия</button>
           </li>
           <li class="services__item">
-            <button class="services__btn" type="button"> кредит</button>
+            <button class="services__btn like-btn" type="button"> кредит</button>
           </li>
         </ul>
 
@@ -210,7 +210,7 @@
           <li class="about__company">Автотрейдинг</li>
           <li class="about__company">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="about__link link" href="">подробнее о нас</a>
+        <a class="about__link link like-btn" href="">подробнее о нас</a>
       </section>
 
       <section class="contacts">
@@ -218,7 +218,7 @@
         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
         <img class="contacts__map" width="560" height="222" src="img/map-1.png" alt="адрес:г. Москва, ул. Строителей, 15">
-        <button class="contacts__btn" type="button">подробнее о нас</button>
+        <button class="contacts__btn like-btn" type="button">подробнее о нас</button>
       </section>
 </div>
 
@@ -234,7 +234,6 @@
         </p>
       </div>
       <div class="footer__center-wrap">
-
         <ul class="footer__nav list">
           <li class="footer__item"><a class="footer__link link" href="">доставка</a></li>
           <li class="footer__item"><a class="footer__link link " href="">гарантия</a></li>
@@ -242,7 +241,6 @@
         </ul>
 
         <ul class="footer__social list">
-
           <li class="footer__social-item">
             <a class="footer__social-link link" href="#">
               фейсбук
@@ -259,12 +257,9 @@
             </a>
           </li>
         </ul>
-
-
       </div>
 
       <div class="footer__right-wrap">
-
         <ul class="footer__activity list">
           <li>
             <a class="footer__activity-link link" href="#">войти</a>
@@ -276,7 +271,6 @@
             <a class="footer__activity-link link" href="#">корзина</a>
           </li>
         </ul>
-
         <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
         <a class="footer__copyright link" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML-academy">
@@ -284,22 +278,23 @@
       </div>
     </div>
   </footer>
+
   <section class="write-us">
     <h2 class="visually-hidden">Напишите нам письмо</h2>
     <form class="write-us__form" action="https://echo.htmlacademy.ru/" method="POST">
       <label class="write-us__label">
         Ваше имя:
-        <input class="write-us__name" type="text" name="name" placeholder="Имя Фамилия">
+        <input class=" write-us__input write-us__name" type="text" name="name" placeholder="Имя Фамилия">
       </label>
       <label class="write-us__label">
         Ваш e-mail:
-        <input class="write-us__email" type="email" name="email" placeholder="email@example.com">
+        <input class="write-us__input write-us__email" type="email" name="email" placeholder="email@example.com">
       </label>
       <label class="write-us__label">
         Текст письма:
-        <textarea class="write-us__text" name="text" placeholder="В свободной форме"></textarea>
+        <textarea class="write-us__input write-us__text" name="text" placeholder="В свободной форме"></textarea>
       </label>
-      <button type="submit" class="write-us__submit">отправить</button>
+      <button type="submit" class="write-us__submit like-btn">отправить</button>
     </form>
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
