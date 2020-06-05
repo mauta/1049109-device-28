@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -8,7 +8,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page__body">
   <header class="header">
     <a href="#">
       <img class="header__logo" width="163" height="35" src="img/logo-device.svg" alt="Логотип, слово 'device' ">
@@ -52,7 +52,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="page__main">
     <h1 class="visually-hidden"> Магазин гаджетов 'Device'</h1>
 
     <!-- переделать потом в слайдер -->
@@ -60,42 +60,89 @@
       <h2 class="visually-hidden">
         Лучшие товары
       </h2>
-      <img class="product__img" src="img/slider-1.png" width="384" height="486" alt="Селфи-палка в трех ракурсах">
-      <h3 class="product__tagline">Делай селфи, как Бен Стиллер! </h3>
-      <p class="product__text">Самая длинная палка для селфи доступна в нашем магазине.
-        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-      <a href="" class="product__details like-btn link">подробнее</a>
+      <ul class="product__list list">
+        <li class="product__item visually-hidden">
+          <img class="product__img" src="img/slider-1.png" width="384" height="486" alt="Селфи-палка в трех ракурсах">
+          <h3 class="product__tagline">Делай селфи, как Бен Стиллер! </h3>
+          <p class="product__text">Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a href="" class="product__details like-btn link">подробнее</a>
+
+          <!-- возможно переделать на таблицу -->
+          <div class="product__description">
+            <ul class="product__parametrs list">
+              <li class="product__parametr">
+                <span class="product__value">8,5 м</span>
+                <span class="product__key">Длина палки</span>
+              </li>
+              <li class="product__parametr">
+                <span class="product__value">5 кг</span>
+                <span class="product__key">Вес палки</span>
+              </li>
+              <li class="product__parametr">
+                <span class="product__value">Карбон</span>
+                <span class="product__key">Материал</span>
+              </li>
+            </ul>
+          </div>
+          <!-- конец возможной таблицы -->
+        </li>
+        <li  class="product__item visually-hidden">
+          <img class="product__img" src="img/slider-2.png" width="384" height="486" alt="Черный браслет">
+          <h3 class="product__tagline">Худеем правильно! </h3>
+          <p class="product__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
+            не пропускать занятия и соблюдать диету.</p>
+          <a href="" class="product__details like-btn link">подробнее</a>
+
+          <!-- возможно переделать на таблицу -->
+            <ul class="product__parametrs list">
+              <li class="product__parametr">
+                <p class="product__value">48 часов</p>
+                <p class="product__key">Без подзарядки</p>
+              </li>
+
+            </ul>
+
+        </li>
+        <li  class="product__item">
+          <img class="product__img" src="img/slider-3.png" width="526" height="334" alt="крутой квадрокоптер">
+          <h3 class="product__tagline">Порхает как бабочка, жалит как пчела! </h3>
+          <p class="product__text">Этот обычный, на первый взгляд, квадрокоптер оснащен
+            мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="" class="product__details like-btn link">подробнее</a>
+
+          <!-- возможно переделать на таблицу -->
+          <div class="product__description">
+            <ul class="product__parametrs list">
+              <li class="product__parametr">
+                <span class="product__value">800 м</span>
+                <span class="product__key">Дальность полета</span>
+              </li>
+              <li class="product__parametr">
+                <span class="product__value">50 м</span>
+                <span class="product__key">Радиус поражения </span>
+              </li>
+
+            </ul>
+          </div>
+          <!-- конец возможной таблицы -->
+        </li>
+
+      </ul>
+
+
 
       <div class="product__slayder slayder">
         <button class="slayder__btn">0</button>
         <button class="slayder__btn">0</button>
         <button class="slayder__btn">0</button>
       </div>
-
-      <!-- возможно переделать на таблицу -->
-      <div class="product__description">
-        <ul class="product__parametrs list">
-          <li class="product__parametr">
-            <span class="product__value">8,5 м</span>
-            <span class="product__key">Длина палки</span>
-          </li>
-          <li class="product__parametr">
-            <span class="product__value">5 кг</span>
-            <span class="product__key">Вес палки</span>
-          </li>
-          <li class="product__parametr">
-            <span class="product__value">Карбон</span>
-            <span class="product__key">Материал</span>
-          </li>
-        </ul>
-      </div>
-      <!-- конец возможной таблицы -->
     </section>
     <!-- конец возможного слайдера -->
 
 
     <section class="kinds">
-      <h2 class="visualy-hidden"> Виды гаджетов</h2>
+      <h2 class="visually-hidden"> Виды гаджетов</h2>
       <ul class="kinds__list list">
         <li class="kinds__item">
           <a class="kinds__link link" href="">
@@ -183,29 +230,31 @@
     <section class="logotypes">
       <h2 class="visually-hidden">Логотипы</h2>
       <ul class="logotypes__list list">
-        <li class="logotypes__item">
-          <img class="logotypes__logo" width="260" height="100" src="img/logo-1.png" alt="Логотип DJI">
+        <li class="logotypes__item logotypes__logo-DJI">
+          <span class="visually-hidden">Логотип DJI</span>
         </li>
-        <li class="logotypes__item">
-          <img class="logotypes__logo" width="260" height="100" src="img/logo-2.png" alt="Логотип SPGadgets">
+        <li class="logotypes__item logotypes__logo-SPGadgets">
+          <span class="visually-hidden">Логотип SPGadgets</span>
         </li>
-        <li class="logotypes__item">
-          <img class="logotypes__logo" width="260" height="100" src="img/logo-3.png" alt="Логотип GoPro">
+        <li class="logotypes__item logotypes__logo-GoPro">
+          <span class="visually-hidden">Логотип GoPro</span>
         </li>
-        <li class="logotypes__item">
-          <img class="logotypes__logo" width="260" height="100" src="img/logo-4.png" alt="Логотип VIve">
+        <li class="logotypes__item logotypes__logo-VIve">
+          <span class="visually-hidden">Логотип VIve</span>
         </li>
       </ul>
     </section>
 
-<div class="about-contact-wrap">
+
+
+
       <section class="about">
         <h2 class="about__title">О нас</h2>
         <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика,
           который есть в каждом из нас.</p>
         <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки
           России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="about__delivery">
+        <ul class="about__delivery list">
           <li class="about__company">Деловые линии</li>
           <li class="about__company">Автотрейдинг</li>
           <li class="about__company">ЖелДорЭкспедиция</li>
@@ -218,24 +267,22 @@
         <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
         <img class="contacts__map" width="560" height="222" src="img/map-1.png" alt="адрес:г. Москва, ул. Строителей, 15">
-        <button class="contacts__btn like-btn" type="button">подробнее о нас</button>
+        <button class="contacts__btn like-btn" type="button">напишите нам</button>
       </section>
-</div>
+
 
   </main>
   <footer class="footer">
-    <div class="footer__wrap">
-      <div class="footer__left-wrap">
-        <a href="#">
-          <svg class="footer__logo" alt="Логотип, слово 'device' " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
+        <a class="footer__logo-link" href="#">
+          <svg width="163" height="35" class="footer__logo" alt="Логотип, слово 'device' " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
             <path d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z"/>
           </svg>
           <span class="visually-hidden">Переход на главную страницу</span>
         </a>
         <p class="footer__address">г. Москва, ул. Строителей, 15
         </p>
-      </div>
-      <div class="footer__center-wrap">
+        <a class="footer__phone link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+
         <ul class="footer__nav list">
           <li class="footer__item"><a class="footer__link link" href="">доставка</a></li>
           <li class="footer__item"><a class="footer__link link " href="">гарантия</a></li>
@@ -244,42 +291,39 @@
 
         <ul class="footer__social list">
           <li class="footer__social-item">
-            <a class="footer__social-link link" href="#">
-              фейсбук
+            <a class="footer__social-link footer__social-fb link" href="#">
+              <span class="visually-hidden">фейсбук</span>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link link" href="#">
+            <a class="footer__social-link footer__social-ig link" href="#">
               <span class="visually-hidden">инстаграм</span>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link link" href="#">
+            <a class="footer__social-link footer__social-tw link" href="#">
               <span class="visually-hidden">твитер</span>
             </a>
           </li>
         </ul>
-      </div>
 
-      <div class="footer__right-wrap">
+
         <ul class="footer__activity list">
-          <li>
-            <a class="footer__activity-link link" href="#">войти</a>
+          <li >
+            <a class="footer__activity-link link" href="#">Войти</a>
           </li>
           <li>
-            <a class="footer__activity-link link" href="#">сравнить</a>
+            <a class="footer__activity-link link" href="#">Сравнить</a>
           </li>
           <li>
-            <a class="footer__activity-link link" href="#">корзина</a>
+            <a class="footer__activity-link link" href="#">Корзина</a>
           </li>
         </ul>
-        <a class="footer__phone link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+
         <a class="footer__copyright link" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.svg" width="27" height="34" alt="Логотип HTML-academy">
           <span class="visually-hidden">HTML-academy</span></a>
-      </div>
-    </div>
-  </footer>
+ </footer>
 
   <section class="write-us">
     <h2 class="visually-hidden">Напишите нам письмо</h2>
