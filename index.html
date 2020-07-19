@@ -31,7 +31,7 @@
     </div>
     <nav class="header__nav">
       <ul class="header__menu list">
-        <li class="header__item">
+        <li class="header__item header__item-catalog">
           <a class="header__link link" href="#">каталог товаров </a>
           <ul class="header__submenu list">
             <li class="header__sub-item"><a class="header__sub-link link" href="#">Виртуальная реальность</a></li>
@@ -61,9 +61,10 @@
         Лучшие товары
       </h2>
       <ul class="product__list list">
-        <li class="product__item visually-hidden">
-          <img class="product__img" src="img/slider-1.png" width="384" height="486" alt="Селфи-палка в трех ракурсах">
-          <h3 class="product__tagline">Делай селфи, как Бен Стиллер! </h3>
+        <li class="product__item">
+          <span class="product__number">01</span>
+          <img class=" product__img product__img-1" src="img/slider-1.png" width="384" height="486" alt="Селфи-палка в трех ракурсах">
+          <h3 class="product__tagline">Делай селфи,<br> как Бен Стиллер! </h3>
           <p class="product__text">Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a href="" class="product__details like-btn link">подробнее</a>
@@ -72,22 +73,23 @@
           <div class="product__description">
             <ul class="product__parametrs list">
               <li class="product__parametr">
-                <span class="product__value">8,5 м</span>
-                <span class="product__key">Длина палки</span>
+                <p class="product__value">8,5 м</p>
+                <p class="product__key">Длина палки</p>
               </li>
               <li class="product__parametr">
-                <span class="product__value">5 кг</span>
-                <span class="product__key">Вес палки</span>
+                <p class="product__value">5 кг</p>
+                <p class="product__key">Вес палки</p>
               </li>
               <li class="product__parametr">
-                <span class="product__value">Карбон</span>
-                <span class="product__key">Материал</span>
+                <p class="product__value">Карбон</p>
+                <p class="product__key">Материал</p>
               </li>
             </ul>
           </div>
           <!-- конец возможной таблицы -->
         </li>
         <li class="product__item visually-hidden">
+          <span class="product__number">02</span>
           <img class="product__img" src="img/slider-2.png" width="384" height="486" alt="Черный браслет">
           <h3 class="product__tagline">Худеем правильно! </h3>
           <p class="product__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
@@ -104,7 +106,8 @@
           </ul>
 
         </li>
-        <li class="product__item">
+        <li class="product__item visually-hidden">
+          <span class="product__number">03</span>
           <img class="product__img" src="img/slider-3.png" width="526" height="334" alt="крутой квадрокоптер">
           <h3 class="product__tagline">Порхает как бабочка, жалит как пчела! </h3>
           <p class="product__text">Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -115,12 +118,12 @@
           <div class="product__description">
             <ul class="product__parametrs list">
               <li class="product__parametr">
-                <span class="product__value">800 м</span>
-                <span class="product__key">Дальность полета</span>
+                <p class="product__value">800 м</p>
+                <p class="product__key">Дальность полета</p>
               </li>
               <li class="product__parametr">
-                <span class="product__value">50 м</span>
-                <span class="product__key">Радиус поражения </span>
+                <p class="product__value">50 м</p>
+                <p class="product__key">Радиус поражения </p>
               </li>
 
             </ul>
@@ -133,9 +136,9 @@
 
 
       <div class="product__slayder slayder">
-        <button class="slayder__btn">0</button>
-        <button class="slayder__btn">0</button>
-        <button class="slayder__btn">0</button>
+        <button class="slayder__btn"><span class="visually-hidden">1</span></button>
+        <button class="slayder__btn"><span class="visually-hidden">2</span></button>
+        <button class="slayder__btn"><span class="visually-hidden">3</span></button>
       </div>
     </section>
     <!-- конец возможного слайдера -->
