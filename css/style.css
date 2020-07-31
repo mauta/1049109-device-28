@@ -202,7 +202,7 @@ body {
   margin: 0 auto;
   background-color: var(--accent-bgr);
   padding-top: 30px;
-  padding: 45px 60px 20px;
+  padding: 45px 60px 12px;
   position: relative;
   z-index: 1;
 }
@@ -1011,8 +1011,9 @@ body {
 .catalog {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto 330px 830px auto;
+  grid-template-columns: auto 327px 830px auto;
   grid-template-rows: auto;
+  padding-top: 44px;
 
 }
 
@@ -1021,6 +1022,8 @@ body {
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
+  margin: 0;
+  padding-left: 60px;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -1032,6 +1035,15 @@ body {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.breadcrumbs__item {
+  margin-right: 41px;
 }
 
 .breadcrumbs__link {
@@ -1042,19 +1054,25 @@ body {
   opacity: 0.3;
 }
 
-.catalog-header__wrap {
-  background-color: var(--basic-grey-light);
-  grid-column-start: 1;
-  grid-column-end: 5;
+.catalog-header__filter {
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
   z-index: 10;
-  mix-blend-mode: multiply;
+  padding-left: 60px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-.catalog-header{
-width: 1160px;
-margin: auto;
+.catalog-header {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  padding-top: 25px;
+  padding-left: 71px;
 }
 
 .catalog-header__filter,
@@ -1067,15 +1085,34 @@ margin: auto;
   text-transform: uppercase;
 }
 
+.catalog-header__list {
+  display: flex;
+  margin-left: 73px;
+}
+
 .catalog-header__sort-item {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   opacity: 0.3;
+  margin-right: 30px;
 }
 
-.catalog__filter{
+.catalog-header__btn-wrap {
+  margin-left: auto;
+}
+
+.catalog-header__btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1px 2px 2px 2px;
+  margin-left: 15px;
+
+}
+
+.catalog__filter {
   background-color: var(--basic-grey-light);
   grid-column-start: 2;
   grid-column-end: 3;
@@ -1095,11 +1132,24 @@ margin: auto;
   height: 100%;
   width: 100%;
   display: block;
- }
+}
+
+.catalog::before {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  content: "";
+  background-color: var(--basic-grey-light);
+  height: 100%;
+  width: 100%;
+  display: block;
+  mix-blend-mode: multiply;
+}
 
 
 
-.catalog__wrap{
+.catalog__wrap {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 4;
@@ -1128,12 +1178,12 @@ margin: auto;
   line-height: 19px;
 }
 
-.catalog__wrap{
+.catalog__wrap {
   padding-left: 72px;
   padding-top: 70px;
 }
 
-.catalog__list{
+.catalog__list {
   display: grid;
   grid-template-columns: 360px 360px;
   grid-template-rows: 454px 454px;
@@ -1141,20 +1191,20 @@ margin: auto;
   grid-column-gap: 40px;
 }
 
-.catalog__item{
+.catalog__item {
   padding: 0;
   font-size: 0;
   position: relative;
 }
 
-.catalog__img{
+.catalog__img {
   width: 100%;
   margin-bottom: 30px;
 }
 
-.catalog__name-wrap{
-display: flex;
-justify-content: space-between;
+.catalog__name-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
 .catalog__name {
@@ -1164,7 +1214,7 @@ justify-content: space-between;
   line-height: 22px;
   letter-spacing: 0.05em;
   width: 274px;
-  }
+}
 
 .catalog__price {
   font-family: "Gilroy", Helvetica, sans-serif;
@@ -1189,13 +1239,13 @@ justify-content: space-between;
   letter-spacing: 0.1em;
 }
 
-.catalog__add-cart{
+.catalog__add-cart {
   top: 171px;
   left: 77px;
   width: 200px;
 }
 
-.catalog__add-compare{
+.catalog__add-compare {
   top: 222px;
   left: 87px;
   opacity: 0.5;
@@ -1204,23 +1254,22 @@ justify-content: space-between;
 
 .catalog__new,
 .catalog__add-cart,
-.catalog__add-compare{
+.catalog__add-compare {
   position: absolute;
   display: none;
 }
 
 .catalog__item:hover .catalog__add-cart,
-.catalog__item:hover .catalog__add-compare
-{
+.catalog__item:hover .catalog__add-compare {
   display: flex;
 }
 
-.catalog__add-compare:hover{
+.catalog__add-compare:hover {
   opacity: 1;
 }
 
 .catalog__add-compare:active,
-.catalog__add-compare:focus{
+.catalog__add-compare:focus {
   opacity: 0.3;
 }
 

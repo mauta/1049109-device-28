@@ -68,79 +68,88 @@
         </li>
       </ul>
 
-      <div class="catalog-header__wrap">
-        <div class="catalog-header">
+
+
           <span class="catalog-header__filter">фильтр:</span>
+          <div class="catalog-header">
           <span class="catalog-header__sort">сортировка:</span>
           <ul class="catalog-header__list list">
             <li class="catalog-header__sort-item">По цене</li>
             <li class="catalog-header__sort-item">По типу</li>
             <li class="catalog-header__sort-item">По популярности</li>
           </ul>
-          <span>вверх</span>
-          <span>вниз</span>
+         <div class="catalog-header__btn-wrap">
+            <button class="catalog-header__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+              <span class="visually-hidden">вверх</span>
+            </button>
+            <button class="catalog-header__btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+              <span class="visually-hidden">вниз</span>
+            </button>
+         </div>
         </div>
-      </div>
 
 
-        <form class="catalog__filter filter" action="https://echo.htmlacademy.ru/" method="GET">
-          <!-- здeсь могла быть ваша реклама и ползунок -->
 
-          <fieldset class="color">
-            <!-- <div class="color__wrap"> -->
-            <legend class="color__legend">Цвет</legend>
+      <form class="catalog__filter filter" action="https://echo.htmlacademy.ru/" method="GET">
+        <!-- здeсь могла быть ваша реклама и ползунок -->
 
-            <label class="color__label">
-              <input class="color__input" type="checkbox" name="color" value="color" checked>
-              <span class="color__checkbox"></span>
-              Чёрный
-            </label>
+        <fieldset class="color">
+          <!-- <div class="color__wrap"> -->
+          <legend class="color__legend">Цвет</legend>
 
-            <label class="color__label">
-              <input class="color__input" type="checkbox" name="color" value="color">
-              <span class="color__checkbox"></span>
-              Белый
-            </label>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color" checked>
+            <span class="color__checkbox"></span>
+            Чёрный
+          </label>
 
-            <label class="color__label">
-              <input class="color__input" type="checkbox" name="color" value="color" checked>
-              <span class="color__checkbox"></span>
-              Синий
-            </label>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color">
+            <span class="color__checkbox"></span>
+            Белый
+          </label>
 
-            <label class="color__label">
-              <input class="color__input" type="checkbox" name="color" value="color" checked>
-              <span class="color__checkbox"></span>
-              Красный
-            </label>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color" checked>
+            <span class="color__checkbox"></span>
+            Синий
+          </label>
 
-            <label class="color__label">
-              <input class="color__input" type="checkbox" name="color" value="color">
-              <span class="color__checkbox"></span>
-              Розовый
-            </label>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color" checked>
+            <span class="color__checkbox"></span>
+            Красный
+          </label>
 
-            <!-- </div> -->
-          </fieldset>
+          <label class="color__label">
+            <input class="color__input" type="checkbox" name="color" value="color">
+            <span class="color__checkbox"></span>
+            Розовый
+          </label>
 
-          <fieldset class="bluetooth">
-            <!-- <div class="bluetooth__wrap"> -->
-            <legend class="bluetooth__legend">bluetooth</legend>
-            <label class="bluetooth__label">
-              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth__have" checked>
-              <span class="bluetooth__radio"></span>
-              есть
-            </label>
-            <label class="bluetooth__label">
-              <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth__none">
-              <span class="bluetooth__radio"></span>
-              нет
-            </label>
-            <!-- </div> -->
-          </fieldset>
+          <!-- </div> -->
+        </fieldset>
 
-          <button class="filter__btn like-btn" type="submit">показать</button>
-        </form>
+        <fieldset class="bluetooth">
+          <!-- <div class="bluetooth__wrap"> -->
+          <legend class="bluetooth__legend">bluetooth</legend>
+          <label class="bluetooth__label">
+            <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth__have" checked>
+            <span class="bluetooth__radio"></span>
+            есть
+          </label>
+          <label class="bluetooth__label">
+            <input class="bluetooth__input" type="radio" name="bluetooth" value="bluetooth__none">
+            <span class="bluetooth__radio"></span>
+            нет
+          </label>
+          <!-- </div> -->
+        </fieldset>
+
+        <button class="filter__btn like-btn" type="submit">показать</button>
+      </form>
 
 
       <div class="catalog__wrap">
@@ -148,10 +157,10 @@
           <li class="catalog__item">
             <img class="catalog__img" width="360" height="380" src="img/item-1.jpg"
               alt="Любительская селфи-палка на сером фоне">
-<div class="catalog__name-wrap">
+            <div class="catalog__name-wrap">
               <a href="#" class="catalog__name link">Любительская селфи-палка</a>
               <span class="catalog__price">500 руб.</span>
-</div>
+            </div>
             <span class="catalog__new">новый</span>
             <button class="catalog__add-cart like-btn" type="button">в корзину</button>
             <button class="catalog__add-compare" type="button">Добавить к сравнению</button>
@@ -159,10 +168,10 @@
           <li class="catalog__item">
             <img class="catalog__img" width="360" height="380" src="img/item-2.jpg"
               alt="Профессиональная селфи-палкана сером фоне">
-<div class="catalog__name-wrap">
+            <div class="catalog__name-wrap">
               <a href="#" class="catalog__name link">Профессиональная <br>селфи-палка </a>
               <span class="catalog__price">1 500 руб.</span>
-</div>
+            </div>
             <span class="catalog__new">новый</span>
             <button class="catalog__add-cart like-btn" type="button">в корзину</button>
             <button class="catalog__add-compare" type="button">Добавить к сравнению</button>
@@ -170,10 +179,10 @@
           <li class="catalog__item">
             <img class="catalog__img" width="360" height="380" src="img/item-3.jpg"
               alt="непотопляемая селфи-палка на сером фоне">
-<div class="catalog__name-wrap">
+            <div class="catalog__name-wrap">
               <a href="#" class="catalog__name link">Непотопляемая <br>селфи-палка</a>
               <span class="catalog__price">2 500 руб.</span>
-</div>
+            </div>
             <span class="catalog__new">новый</span>
             <button class="catalog__add-cart like-btn" type="button">в корзину</button>
             <button class="catalog__add-compare" type="button">Добавить к сравнению</button>
@@ -181,10 +190,10 @@
           <li class="catalog__item">
             <img class="catalog__img" width="360" height="380" src="img/item-4.jpg"
               alt="Селфи-палка «Следуй за мной» на сером фоне">
-<div class="catalog__name-wrap">
+            <div class="catalog__name-wrap">
               <a href="#" class="catalog__name link">Селфи-палка «Следуй за мной»</a>
               <span class="catalog__price">4 900 руб.</span>
-</div>
+            </div>
             <span class="catalog__new">новый</span>
             <button class="catalog__add-cart like-btn" type="button">в корзину</button>
             <button class="catalog__add-compare" type="button">Добавить к сравнению</button>
